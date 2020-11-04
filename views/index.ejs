@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo-List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div>
+            <form action="/new" method="POST">
+                <input type="text" name="title" placeholder="Enter a task">
+                <button type="submit">Submit</button>
+             </form>
+        </div>
+    </div>
+    <div class="todo">
+        <h2>Todo List</h2>
+        <%list.forEach(function(list){%>
+            <%if(list.status == 0){%>
+                <div>
+                    <a href="/changeStatus/<%=list._id%>">
+                        <div class="content">
+                            <%=list.title%>
+                        </div>
+                    </a>
+                    <div class="delete">
+                        <a href="/delete/<%=list._id%>">Delete</a>
+                    </div>
+                </div>
+            <%}%>
+        <%})%>
+    </div>
+    <div class="done">
+        <h2>Done</h2>
+        <%list.forEach(function(list){%>
+            <%if(list.status == 1){%>
+                <div>
+                    <a href="/backStatus/<%=list._id%>">
+                        <div class="content">
+                            <%=list.title%>
+                        </div>
+                    </a>
+                    <div class="delete">
+                        <a href="/delete/<%=list._id%>">Delete</a>
+                    </div>
+                </div>
+            <%}%>
+        <%})%>
+    </div>    
+</body>
+</html>

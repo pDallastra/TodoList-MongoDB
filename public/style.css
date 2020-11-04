@@ -1,0 +1,132 @@
+* { margin: 0; padding: 0;}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #d8d0d0;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.container {
+    width: 60%;
+    background-color: rgb(19, 19, 53);
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin: 0.7rem;
+}
+
+.container input {
+    width: 18rem;
+    height: 2.4rem;
+    margin: 0.5rem 1rem;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+    text-align: center;
+}
+
+.container button {
+    width: 5rem;
+    height: 2.4rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #157215;
+    color: white;
+}
+
+.todo {
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #9ad3bc;
+    color: white;
+    border-radius: 10px;
+}
+
+.todo div {
+    width: 95%;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 0;
+    color: black;
+}
+
+.todo a {
+    width: 100%;
+    text-decoration: none;
+}
+
+.todo .content {
+    border-radius: 4px;
+    background: honeydew;
+    height: 30px;
+}
+
+.todo .delete {
+    width: 10%;
+    height: 30px;
+    background-color: red;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.todo .delete a {
+    color: white;
+}
+
+.done {
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #734046;
+    border-radius: 10px;
+    margin-top: 1rem;
+    color: white;
+}
+
+.done div {
+    width: 95%;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 0;
+    color: black;
+}
+
+.done a {
+    width: 100%;
+    text-decoration: line-through;
+}
+
+.done .content {
+    border-radius: 4px;
+    background: honeydew;
+    height: 30px;
+}
+
+.done .delete {
+    width: 10%;
+    height: 30px;
+    background-color: red;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.done .delete a {
+    color: white;
+    text-decoration: none;
+}
